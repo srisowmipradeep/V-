@@ -8,7 +8,7 @@
   <!-- Confetti -->
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 
-  <!-- Google Font -->
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 
   <style>
@@ -32,7 +32,6 @@
       overflow: hidden;
     }
 
-    /* Floating hearts */
     .heart {
       position: fixed;
       bottom: -20px;
@@ -151,7 +150,6 @@
 
 <canvas id="confettiCanvas"></canvas>
 
-<!-- floating hearts -->
 <script>
   for (let i = 0; i < 15; i++) {
     const h = document.createElement("div");
@@ -166,12 +164,43 @@
 
 <main class="card">
 
-  <!-- TEDDY IMAGE -->
-  <img
-    class="art"
-    src="https://i.imgur.com/7X9ZpZL.png"
-    alt="Cute Teddy Hug"
-  />
+  <!-- OLD CUTE CAT SVG -->
+  <svg class="art" viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="fur" x1="0" x2="1">
+        <stop offset="0" stop-color="#ffd6b3"/>
+        <stop offset="1" stop-color="#ffb88c"/>
+      </linearGradient>
+      <linearGradient id="heart" x1="0" x2="1">
+        <stop offset="0" stop-color="#ff5f9e"/>
+        <stop offset="1" stop-color="#ff2f78"/>
+      </linearGradient>
+    </defs>
+
+    <path d="M250 50 C250 33 270 25 282 38
+             C294 25 314 33 314 50
+             C314 78 282 92 282 106
+             C282 92 250 78 250 50Z"
+          fill="url(#heart)"/>
+
+    <path d="M90 120 C90 70 140 40 190 60
+             C240 40 290 70 290 120
+             C290 180 240 210 190 210
+             C140 210 90 180 90 120Z"
+          fill="url(#fur)"/>
+
+    <path d="M110 92 L95 55 L140 78 Z" fill="#ffb88c"/>
+    <path d="M270 92 L285 55 L240 78 Z" fill="#ffb88c"/>
+
+    <circle cx="160" cy="130" r="6"/>
+    <circle cx="220" cy="130" r="6"/>
+
+    <path d="M190 145 C185 145 182 149 182 152
+             C182 158 190 162 190 168
+             C190 162 198 158 198 152
+             C198 149 195 145 190 145Z"
+          fill="#ff8fb1"/>
+  </svg>
 
   <h1>Surya 💕<br>will you be my Valentine?</h1>
 
@@ -180,14 +209,14 @@
     <button id="noBtn">No 🙈</button>
   </section>
 
-  <div class="hint" id="hint">will you click yes 🥹👉👈? </div>
+  <div class="hint" id="hint">will you click yes 🥹👉👈?</div>
 
   <section class="result" id="result">
     <h2>YAY!!! 🎉💞</h2>
-    <<img class="fireworks"
-     src="https://raw.githubusercontent.com/srisowmipradeep/V-/main/Cute%20Teddy%20Love.jpeg"
-     alt="Celebration">
-
+    <img
+      class="fireworks"
+      src="https://raw.githubusercontent.com/srisowmipradeep/V-/main/Cute%20Teddy%20Love.jpeg"
+      alt="Celebration"
     />
   </section>
 
